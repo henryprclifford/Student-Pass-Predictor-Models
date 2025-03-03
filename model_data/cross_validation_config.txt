@@ -1,0 +1,5 @@
+method: StratifiedKFold
+folds: 5
+shuffle: True
+random_state: 42
+test_size_pct: 20
