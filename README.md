@@ -1,16 +1,16 @@
 # **Student Performance Analysis and Prediction**  
 
-## 📌 **Project Overview**  
+## **Project Overview**  
 This project analyses student performance using a dataset containing academic and socio-demographic attributes. The goal is to understand key factors influencing student success and build machine learning models to predict whether a student will pass or fail.  
 
 By applying **statistical analysis, visualisation techniques, and machine learning models**, the project extracts insights and evaluates predictive performance.
 
 ---
 
-## 📊 **Data Analysis and Feature Engineering**  
+##  **Data Analysis and Feature Engineering**  
 The dataset includes a variety of **numerical and categorical features**, such as **grades, parental education, study habits, and lifestyle factors**.  
 
-### 🔹 **Feature Engineering Steps:**  
+###  **Feature Engineering Steps:**  
 - **Handling missing values** and inconsistencies.  
 - **Statistical analysis** of each feature:
   - **T-tests** for numerical features.
@@ -27,26 +27,26 @@ The dataset includes a variety of **numerical and categorical features**, such a
 
 ---
 
-## 📈 **Visualisations and Exploratory Analysis**  
+##  **Visualisations and Exploratory Analysis**  
 A series of **data visualisations** were generated to explore patterns and relationships:  
 
-### 🔸 **Pass/Fail Distribution**  
+###  **Pass/Fail Distribution**  
 ![](figures/target_analysis/pass_distribution.png)  
 
-### 🔸 **Feature Impact Analysis**  
+###  **Feature Impact Analysis**  
 ![](figures/feature_importance/numeric_features.png)  
 
-### 🔸 **Pass Rate by Categorical Variables**  
+###  **Pass Rate by Categorical Variables**  
 ![](figures/feature_importance/some_categorical_feature_pass_rate.png)  
 
-### 🔸 **Feature Importance from Random Forest**  
+###  **Feature Importance from Random Forest**  
 ![](figures/model_evaluation/rf_feature_importance.png)  
 
 These visualisations provided a solid foundation for selecting features and refining the models.
 
 ---
 
-## 🤖 **Machine Learning Models and Performance**  
+##  **Machine Learning Models and Performance**  
 Several **classification models** were trained and optimised using **GridSearchCV with cross-validation**:
 
 | Model                | Accuracy | Precision | Recall | F1 Score | AUC  |
@@ -60,9 +60,9 @@ Several **classification models** were trained and optimised using **GridSearchC
 
 ---
 
-## 🔬 **Model Evaluation and Interpretation**  
+## **Model Evaluation and Interpretation**  
 
-### 🔹 **Confusion Matrices**  
+### **Confusion Matrices**  
 Each model's **confusion matrix** was plotted to visualise classification errors.  
 
 ![](figures/model_evaluation/logistic_regression_confusion_matrix.png)  
@@ -71,36 +71,36 @@ Each model's **confusion matrix** was plotted to visualise classification errors
 - **Random Forest** had the best balance of precision and recall.  
 - **SVM and Logistic Regression** misclassified some failing students as passing.  
 
-### 🔹 **ROC Curves and AUC Scores**  
+### **ROC Curves and AUC Scores**  
 ![](figures/model_evaluation/roc_curves_comparison.png)  
 
 The **Random Forest model** achieved the highest **AUC (0.91)**, showing the strongest ability to differentiate between passing and failing students.  
 
 ---
 
-## 🏆 **Feature Importance Analysis**  
+##  **Feature Importance Analysis**  
 The **Random Forest feature rankings** highlight the most important predictors:
 
 | Feature            | Importance |
 |-------------------|------------|
-| **Study Time**    | 🔥 High |
-| **Failures**      | 🔥 High |
-| **Parental Education** | 🔥 High |
-| **Alcohol Consumption** | ❄️ Negative Impact |
+| **Study Time**    |  High |
+| **Failures**      |  High |
+| **Parental Education** |  High |
+| **Alcohol Consumption** | Negative Impact |
 
 These insights reinforce the importance of structured study habits and parental support in academic success.
 
 ---
 
-## 🔑 **Key Findings and Insights**  
-1️⃣ **Study time and parental education** are the strongest predictors of academic success.  
-2️⃣ **Alcohol consumption and past failures** have a negative impact on student performance.  
-3️⃣ **Random Forest outperforms all other models**, making it the best choice for predictive analysis.  
-4️⃣ Some features (**school type, travel time**) had minimal impact and could be removed in future iterations.  
+##  **Key Findings and Insights**  
+1️ **Study time and parental education** are the strongest predictors of academic success.  
+2️ **Alcohol consumption and past failures** have a negative impact on student performance.  
+3️ **Random Forest outperforms all other models**, making it the best choice for predictive analysis.  
+4️ Some features (**school type, travel time**) had minimal impact and could be removed in future iterations.  
 
 ---
 
-## 🔮 **Conclusion**  
+##  **Conclusion**  
 This project successfully explored student performance data using **statistical analysis, machine learning, and data visualisation**.  
 
 - **Random Forest** proved to be the most effective predictive model.  
